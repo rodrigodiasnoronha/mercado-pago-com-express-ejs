@@ -37,5 +37,5 @@ server.get("/", async (request, response) => {
   }
 });
 
-const port = 3000;
+const port = process.env.APP_PORT || 3000;
 server.listen(port, () => console.log(`servidor iniciado na porta ${port}`));
